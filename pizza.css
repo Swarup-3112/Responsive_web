@@ -1,0 +1,761 @@
+
+/* ----------------------------- FONTS ----------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    width: 100%;
+    display: inline-block;
+    
+}
+
+.container{
+    max-width: 126rem;
+    margin: 0 auto;
+    padding: 0 3.4rem;
+}
+
+.btn{
+    font-size: 1.4rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    padding: 1.6rem 3rem;
+    background: #ff8400;
+}
+
+/* --------------------------------- HERO SECTION ------------------------ */
+
+.hero-section{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./images/pizza3.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+}
+
+nav{
+   display: flex;
+   height: 8rem;
+   align-items: center;
+   justify-content: space-between;
+   font-size: 2rem;
+}
+
+.nav-list{
+    display: none;
+    cursor: pointer;
+}
+
+nav span{
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+.hero-content{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.header-title{
+    font-size: 7rem;
+    font-family: 'Satisfy', cursive;
+    font-weight: lighter;
+    line-height: 8rem;
+    margin-bottom: 1.4rem;
+}
+
+.sub-content{
+    max-width: 55rem;
+    font-size: 2.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    line-height: 3rem;
+    padding: 3rem 0;
+    display: none;
+}
+
+.hero-content h3{
+    font-size: 2.3rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    margin-bottom: 2.5rem;
+}
+
+.btn:hover{
+    background-color: #ed7c03;
+}
+
+/* -------------------------- AWARD-SECTION ---------------------------- */
+
+.award-list{
+    margin:5rem 0 ;
+}
+
+.award-content{
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    opacity: 0.6;
+}
+
+.award-content::after{
+    display: block;
+    position: absolute;
+    content: '';
+    width: 0rem;
+    height: 0.5rem;
+    background: #ff8400;
+    bottom: 0px;
+    transition: 0.3s ease;
+}
+
+.award-content:hover{
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+.award-content:hover > .award-logo{
+    filter: grayscale(0%);
+}
+
+.award-content:hover::after{
+    width: 100%;
+}
+
+.award-sub-content{
+    margin-left: 1.5rem;
+    /* margin-bottom: 3rem; */
+}
+
+.award-sub-content h4{
+    font-size: 1.8rem;
+}
+
+.award-sub-content p{
+    font-size: 1.4rem;
+    color: #bdbdbd;
+}
+
+.award-logo{
+    width: 8.5rem;
+    height: 7.7rem;
+    filter: grayscale(100%);
+    transition: 0.3s ease;
+}
+
+.stars{
+    width: 4.4rem;
+    height: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* -------------------------------------- OFFER-SECTION ----------------------------- */
+
+
+
+.offer1{
+   background-image:  url(./images/bgpizza.jpg);
+   width: 100%;
+   height: 15rem;
+}
+
+.offer2{
+    background-image: url(./images/bgpizza2.jpg); 
+    width: 100%;
+    height: 15rem;
+}
+
+.offer-content1{
+    background: linear-gradient(rgb(255,132,0 ,0.4), rgb(255,132,0,0.4));
+
+}
+
+.offer-content2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+.offer-content1 , .offer-content2{
+    color: #fff;
+    text-align: center;
+    height: 15rem;
+    padding: 4rem 0;
+}
+
+.offer-content1 span , .offer-content2 span{
+    font-size: 2rem;
+}
+
+.offer-content1 p , .offer-content2{
+    font-size: 3rem;
+}
+
+.head-chef-title{
+    font-size: 2.9rem;
+    margin: 3rem 0;
+    font-weight: normal;
+}
+
+.head-chef-content , .head-chef-quote{
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+}
+
+.head-chef-quote{
+    position: relative;
+    padding-top: 4rem;
+}
+
+.head-chef-quote::before{
+    content: "\201c";
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 70px;
+    line-height: 1;
+}
+
+.btn-link{
+    text-decoration: underline;
+    font-size: 1.6rem;
+    color: #ff8400;
+    font-weight: bold;
+}
+
+.btn-link:hover{
+    color: #554f4f;
+}
+
+/* ------------------------------------------ menu section ------------------------  */
+
+.menu{
+    margin-top: 8rem;
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: bold;
+    /* position: relative; */
+}
+
+.menu-container{
+position: relative;
+
+}
+
+.drinks , .main-course , .starter{
+    width: 100%;
+    height: 21rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drinks{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(./images/drinks.jpg);
+}
+
+.main-course{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(./images/maincourser.jpg);
+}
+
+.starter{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)), url(./images/starters.jpg);
+}
+
+.menu-container::after{
+    background-color: rgb(255,132,0 ,0.4);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: .3s ease;
+    width: 0;
+}
+
+.menu-container:hover::after{
+    width: 100%;
+} 
+
+/* -------------------feedback section------------------  */
+
+.feedback-content{
+    margin-top: 7rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.feedback-title{
+    font-size: 2.9rem;
+    font-weight: lighter;
+}
+
+.feedback-content p {
+    font-size: 1.8rem;
+    font-weight: lighter;
+    margin-top: 3rem;
+}
+
+.feedback-container{
+    padding-top: 4rem;
+}
+
+.quote{
+    padding-top: 6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.quote::before{
+    content: "\"";
+    position: absolute;
+    margin-left: 0 auto;
+    color: #ff8400;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    font-size: 120px;
+    line-height: 1;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+
+.card-img{
+    width: 7rem;
+    height: 7rem;
+    margin-right: 2.3rem;
+}
+
+.card-content{
+    padding-top: 1rem;
+}
+
+.card-content span{
+    font-size: 1.8rem;
+}
+
+.card-content p{
+    font-size: 1.4rem;
+    color: #bdbdbd;
+}
+
+/* ----------------------------- chef special --------------------------  */
+
+.chef-container{
+   margin-top: 10rem;
+}
+
+.chef-content{
+    text-align: center;
+}
+
+.chef-content > h2{
+    font-size: 2.9rem;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 5rem;
+}
+
+.chef-card{
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+.btn-chef{
+    padding:1rem 1.5rem;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    position: absolute;
+    top: 5%;
+    left: 4%;
+}
+
+.chef-card-content{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.chef-card-content > span{
+    color: #ff8400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.pizza-container{
+   padding: 0 3.4rem;
+}
+
+.pizza-name{
+    position: relative;
+}
+
+.pizza-name::after{
+    content: '';
+    position: absolute;
+    border-bottom: 2px dotted #ccc;
+    width: 20rem;
+    bottom: 6px;
+    margin-left: 0.5rem;
+}
+
+/* ----------------------------- BOOK NOW -------------------  */
+
+.booknow-container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(./images/bgpizza2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.booknow-content{
+    padding: 4rem 3.4rem;
+}
+
+.book-title{
+    font-size: 2.9rem;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.booknow-content > p{
+    font-size: 1.8rem;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    margin:3rem 0 5rem 0;
+}
+
+.email-container{
+    background: #ff8400;
+    color: white;
+    padding-bottom: 4rem;
+}
+
+.mail-title{
+    font-size: 2.9rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    padding-top: 6.3rem;
+}
+
+.email-container p{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    padding: 1rem 0 4.4rem 0;
+    line-height: 3rem;
+}
+
+.input-mail{
+    padding: 1.7rem 2.7rem;
+    background-color: #ed7c03;
+    border: 2px solid #ed7c03;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    outline-style: none;
+}
+
+.input-mail::placeholder{
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.input-mail[type=email]{
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.btn-suscribe{
+    padding: 1.7rem 2.65rem;
+    color: #ff8400;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn-suscribe:hover{
+    background-color: #343434;
+    color: #fff;
+}
+
+/* -------------------------- footer -------------------- */
+
+footer{
+    background-color: #343434;
+    color: #fff;
+    padding-bottom: 4rem;
+}
+
+.main-footer{
+    padding: 6rem 0 3rem 0;
+}
+
+.footer-title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 2.9rem;
+    margin-bottom: 2rem;
+}
+
+.about-us-container p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    padding-bottom: 4rem;
+}
+
+.info-box{
+    display: flex;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+.info-box i{
+    color: #ff8400;
+    margin-right: 1rem;
+}
+
+.footer-end{
+    border-top: 1px solid #ff8400;
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+@media(min-width : 768px){
+
+    nav{
+       display: inline-block;
+       padding-top: 4rem;
+    }
+
+    .nav-list{
+        min-width: 70rem;
+        display: flex;
+        justify-content: space-between;
+        font-size: 1.4rem;
+        padding-top: 3rem;
+    }
+
+    nav span{
+        display: none;
+    }
+
+    .hero-content{
+       padding-top: 4rem;
+    }
+
+    .sub-content{
+        display: inline-block;
+    }
+
+    .award-list{
+        display: flex;
+    }
+
+    .award-content{
+        display: inline-block;
+        text-align: center;
+        min-height: 22rem;
+        width: 25%;
+    }
+
+    .award-logo{
+        margin-bottom: 2rem;
+    }
+
+    .chef{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .chef-quote{
+        width: 30%;
+    }
+
+    .pizza-name::after{
+        width: 12rem;
+    }
+
+    .offer{
+        padding-left: 3.4rem;
+        width: 50%;
+        display: flex;
+    }
+
+    .offer1 , .offer2{
+        height: 51rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .menu{
+        display: flex;
+    }
+
+    .menu-container{
+        width: 33%;
+    }
+
+    .drinks , .starter ,.main-course{
+        height: 70rem;
+        background-position: center;
+        align-items: flex-end;
+    }
+     
+    .menu-content{
+        background-color: #ff8400;
+        color: #fff;
+        width: 100%; 
+        text-align: center;
+        padding: 4rem 0;
+    }
+
+    .menu-container::after{
+        height: 60rem;
+    }
+
+    .feedback-container{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .feedback-list{
+        padding: 0 1rem;
+    }
+    
+    .chef-special-list{
+        display: flex;
+        flex-wrap: wrap;
+        padding-bottom: 8rem;
+    }
+
+    .chef-card{
+        width: 50%;
+        padding: 1rem 0.1rem;
+    }
+
+    .mail-input-container{
+        display: flex;
+    }
+
+    .input-mail{
+        width: 70%;
+        margin-bottom: 0;
+    }
+
+    .btn-suscribe{
+        width: 30%;
+    }
+
+    .main-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .about-us-container{
+        width: 50%;
+    }
+
+    .contact-us-list{
+        width: 40%;
+    }
+}
+
+@media(min-width: 1024px){
+
+    nav{
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-list{
+        padding-top: 0%;
+    }
+
+    .header-title{
+        font-size: 8rem;
+    }
+
+    .hero-content h3{
+        font-size: 3.6rem;
+    }
+
+    .head-chef-content , .head-chef-quote{
+        max-width: 40rem;
+    }
+
+   .chef-card{
+       width: 25%;
+   }
+
+   .pizza-container{
+       padding: 0 2rem;
+   }
+
+   .pizza-name::after{
+       width: 11rem;
+   }
+
+   .mail-content-container{
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+   }
+
+   .mail-input-container{
+       height: 5rem;
+       width: 45%;
+   }
+
+   .mail-content{
+       width: 50%;
+   }
+  
+}
